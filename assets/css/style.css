@@ -646,6 +646,7 @@ div.button-weblink h4{
   font-weight: bold;
 }
 div.button-weblink p{
+	font-size: 15px;
 	color: rgb(231, 220, 220);
 }
 
