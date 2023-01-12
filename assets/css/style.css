@@ -579,11 +579,6 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.content-item {
-  width: 80%;
-  left: 10%;
-  bottom: 10%;
-}
 
 ul.portfolio-tags {
 	padding: 10px 0 10px 0;
@@ -621,7 +616,7 @@ span.portfolio-link {
 }
 
 .img-item {
-	max-width: 500px;
+	width: 100%;
 	border: none;
 	background: none;
 	padding: 0;
@@ -633,6 +628,7 @@ span.portfolio-link {
 }
 
 div.button-weblink {
+	padding: 10%;
 	-webkit-transition: all .35s;
 	transition: all .35s;
 	border-radius: 0;
