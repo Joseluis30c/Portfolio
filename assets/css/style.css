@@ -1,9 +1,3 @@
-/**
-* Template Name: Lonely - v4.10.0
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-lonely/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -369,18 +363,6 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#hero .btn-get-started {
-  font-size: 64px;
-  transition: 0.5s;
-  color: #fff;
-  height: 60px;
-}
-
-#hero .btn-get-started:hover {
-  padding-top: 10px;
-  color: #7d8fa0;
-}
-
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -582,10 +564,6 @@ section {
   padding-bottom: 10px;
 }
 
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
 .resume .resume-item::before {
   content: "";
   position: absolute;
@@ -624,13 +602,13 @@ li.portfolio-tag {
 }
 
 .textbox-portfolio {
-	width: 100%;
-	height: 100%;
+	max-width: 500px;
+  height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
 	transform: scale(0);
-	background: #6390bb;
+	background: #2c4964;
 	opacity: 0.9;
 }
 span.portfolio-link {
@@ -664,11 +642,11 @@ div.button-weblink {
 }
 
 div.button-weblink h4{
-	color: black;
+	color: white;
   font-weight: bold;
 }
 div.button-weblink p{
-	color: black;
+	color: rgb(231, 220, 220);
 }
 
 /*--------------------------------------------------------------
