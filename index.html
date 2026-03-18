@@ -3,8 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
     <title>Jose Luis Chavesta Rivas · Backend .NET</title>
-    <link rel="icon" href="assets/img/me/jl.png" >
+    <meta name="description" content="Desarrollador Backend .NET | Arquitectura Limpia | SQL Server | Azure | Microservicios | 3+ años experiencia enterprise">
+    <meta name="keywords"    content=".NET, C#, Backend Developer, SQL Server, Azure, Clean Architecture, Microservices, Peru, Remote">
+    <meta name="author"      content="Jose Luis Chavesta Rivas">
+    <meta name="robots"      content="index, follow">
+    <link rel="canonical"    href="https://joseluischavestarivas.netlify.app/">
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="https://joseluischavestarivas.netlify.app/">
+    <meta property="og:title"       content="Jose Luis Chavesta Rivas · Backend .NET Developer">
+    <meta property="og:description" content="Backend .NET Developer | Clean Architecture | SQL Server | Azure | Microservices">
+    <meta property="og:image"       content="https://joseluischavestarivas.netlify.app/assets/img/me/yo.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="Jose Luis Chavesta Rivas · Backend .NET Developer">
+    <meta name="twitter:description" content="Backend .NET Developer | Clean Architecture | SQL Server">
+    <meta name="twitter:image"       content="https://joseluischavestarivas.netlify.app/assets/img/me/yo.jpg">
+
+    <link rel="icon" href="assets/img/me/jl.png">
+
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -14,25 +41,35 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+<nav class="navbar navbar-expand-lg bg-white sticky-top">
     <div class="container">
-        <a class="navbar-brand fw-bold fs-3 text-primary-custom" href="#"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="navbar-brand fw-bold fs-4 text-primary-custom" href="#inicio"></a>
+
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
-                <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                <li class="nav-item">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                <li class="nav-item"><a class="nav-link" href="#inicio"      data-i18n="nav.inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experiencia" data-i18n="nav.experiencia">Experiencia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#habilidades" data-i18n="nav.habilidades">Habilidades</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portafolio"  data-i18n="nav.portafolio">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto"    data-i18n="nav.contacto">Contacto</a></li>
+                <li class="nav-item ms-lg-2">
+                    <button class="lang-toggle" aria-label="Toggle language">EN</button>
+                </li>
+                <li class="nav-item ms-lg-1">
                     <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Cambiar modo oscuro">
                         <i class="fas fa-moon"></i>
                     </button>
                 </li>
             </ul>
+        </div>
+
+        <!-- Mobile controls -->
+        <div class="d-flex align-items-center gap-2 d-lg-none">
+            <button class="navbar-toggler border-0" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </div>
 </nav>
@@ -43,20 +80,34 @@
         <div class="row align-items-center g-5">
             <div class="col-lg-8 order-2 order-lg-1">
                 <h1 class="display-3 fw-bold text-primary-custom">Jose Luis Chavesta Rivas</h1>
-                <p class="fs-3 text-secondary">Desarrollador Backend .NET | Especialista SQL Server</p>
-                <div class="d-flex flex-wrap gap-4 mt-4">
-                    <span class="d-flex align-items-center gap-2"><i class="fas fa-phone-alt text-primary-custom"></i> 917 461 928</span>
-                    <span class="d-flex align-items-center gap-2"><i class="fas fa-envelope text-primary-custom"></i> chavestarivasjoseluis@gmail.com</span>
-                    <span class="d-flex align-items-center gap-2"><i class="fas fa-map-marker-alt text-primary-custom"></i> Ventanilla, Callao - Perú</span>
+                <div class="typewriter-wrap mb-4">
+                    <span id="typewriter" aria-live="polite"></span>
+                    <span class="typewriter-cursor" aria-hidden="true"></span>
                 </div>
-                <div class="mt-5 d-flex gap-3">
-                    <a href="#contacto" class="btn btn-primary bg-primary-custom px-4 py-3"><i class="fas fa-phone me-2"></i>Contáctame</a>
-                    <a target="_blank" href="https://drive.google.com/file/d/1icwaWQUkZatkwZbowfBvK6BVBNuas-7f/view?usp=sharing" class="btn btn-primary bg-primary-custom border-0 px-4 py-3"><i class="fas fa-download me-2"></i>Descargar CV</a>
-                    <a target="_blank" href="https://drive.google.com/drive/folders/1lWdF9ERGRvS-AUTU7s-ZLkKZOFB4MXSy?usp=drive_link" class="btn btn-primary bg-primary-custom border-0 px-4 py-3"><i class="fas fa-certificate me-2"></i>Certificados</a>
+                <div class="d-flex flex-wrap gap-3 mt-1">
+                    <span class="d-flex align-items-center gap-2 small"><i class="fas fa-phone-alt text-primary-custom"></i> 917 461 928</span>
+                    <span class="d-flex align-items-center gap-2 small"><i class="fas fa-envelope text-primary-custom"></i> chavestarivasjoseluis@gmail.com</span>
+                    <span class="d-flex align-items-center gap-2 small"><i class="fas fa-map-marker-alt text-primary-custom"></i> Ventanilla, Callao — Perú</span>
+                </div>
+                <div class="mt-4 d-flex flex-wrap gap-3">
+                    <a href="#contacto" class="btn btn-primary bg-primary-custom px-4 py-2">
+                        <i class="fas fa-phone me-2"></i><span data-i18n="hero.btn.contact">Contáctame</span>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1rWzsj3yu222seKo5ewY-Z6qKUcY5dKDB/view?usp=sharing"
+                       class="btn btn-primary bg-primary-custom border-0 px-4 py-2">
+                        <i class="fas fa-download me-2"></i><span data-i18n="hero.btn.cv">Descargar CV</span>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/drive/folders/1lWdF9ERGRvS-AUTU7s-ZLkKZOFB4MXSy?usp=drive_link"
+                       class="btn btn-primary bg-primary-custom border-0 px-4 py-2">
+                        <i class="fas fa-certificate me-2"></i><span data-i18n="hero.btn.certs">Certificados</span>
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-4 order-1 order-lg-2 text-center text-lg-start">
-                <img src="assets/img/me/yo.jpg" alt="Jose Luis Chavesta" class="profile-img">
+            <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <picture>
+                    <source srcset="assets/img/me/yo.webp" type="image/webp">
+                    <img src="assets/img/me/yo.jpg" alt="Jose Luis Chavesta" class="profile-img" loading="lazy">
+                </picture>
             </div>
         </div>
     </div>
@@ -65,53 +116,109 @@
 <!-- PERFIL -->
 <section class="py-5">
     <div class="container">
-        <h2 class="display-5 fw-semibold text-primary-custom border-accent pb-2 d-inline-block mb-5">Perfil</h2>
-        <div class="card border-0 shadow-sm p-4">
-            <p class="fs-5 text-secondary">Desarrollador Backend .NET con más de 3 años de experiencia en el sector asegurador, especializado en sistemas de gestión de pólizas masivas y procesamiento de información crítica.<br> Experiencia sólida en diseño de APIs, optimización de bases de datos SQL Server y arquitectura N-Capas bajo principios SOLID y Clean Code. Enfocado en rendimiento, escalabilidad y calidad técnica. <br>Trabajo con metodologías ágiles (Scrum) y utilizo herramientas de Inteligencia Artificial como apoyo estratégico para acelerar el desarrollo, mejorar la calidad del código y generar documentación técnica estructurada. <br>Busco posiciones donde pueda aportar en arquitectura, mejora de performance y toma de decisiones técnicas.</p>
+        <h2 class="display-5 fw-semibold text-primary-custom border-accent pb-2 d-inline-block mb-4" data-i18n="section.perfil">Perfil</h2>
+        <div class="card border-0 shadow-sm p-4 mb-5">
+            <p class="fs-5 text-secondary mb-0" data-i18n="perfil.text">
+                Desarrollador Backend .NET con más de 3 años de experiencia en el sector asegurador, especializado en el diseño de APIs, 
+                procesamiento de datos críticos a gran escala y modernización de sistemas legacy hacia arquitecturas limpias y desacopladas. 
+                Experiencia práctica aplicando Clean Architecture, principios SOLID y patrones de microservicios para construir sistemas 
+                mantenibles, testables y preparados para escalar. Sólido dominio de SQL Server, incluyendo optimización de consultas 
+                complejas y diseño de índices con impacto medible en rendimiento. 
+                Integrar Inteligencia Artificial de forma aplicada: desde el uso de modelos de lenguaje para automatizar flujos de negocio (Groq, 
+                Twilio) hasta el apoyo en generación de documentación técnica y revisión de código.
+            </p>
+        </div>
+
+        <h2 class="display-5 fw-semibold text-primary-custom border-accent pb-2 d-inline-block mb-4" data-i18n="section.ventaja">Ventaja competitiva</h2>
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-4">
+                <div class="card advantage-card h-100 border-0 shadow-sm p-4">
+                    <div class="icon-wrap"><i class="fas fa-shield-alt"></i></div>
+                    <h4 class="h5 fw-bold" data-i18n="adv.ins.title">Especialización en sistemas críticos del sector asegurador</h4>
+                    <p class="text-secondary small mb-0" data-i18n="adv.ins.desc">
+                        Conocimiento profundo de procesos de negocio de seguros 
+                        (gestión de pólizas masivas, ETL de datos de asegurados, integración multicanal), lo que permite entregar soluciones 
+                        técnicas alineadas al dominio sin curva de aprendizaje de negocio.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="card advantage-card h-100 border-0 shadow-sm p-4">
+                    <div class="icon-wrap"><i class="fas fa-tachometer-alt"></i></div>
+                    <h4 class="h5 fw-bold" data-i18n="adv.perf.title">Modernización de sistemas legacy</h4>
+                    <p class="text-secondary small mb-0" data-i18n="adv.perf.desc">
+                        Experiencia migrando pipelines ETL basados en SSIS hacia arquitecturas modernas 
+                        basadas en APIs REST y Clean Architecture, reduciendo deuda técnica y mejorando la mantenibilidad de los sistemas. 
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="card advantage-card h-100 border-0 shadow-sm p-4">
+                    <div class="icon-wrap"><i class="fas fa-robot"></i></div>
+                    <h4 class="h5 fw-bold" data-i18n="adv.ai.title">Integración aplicada de Inteligencia Artificial</h4>
+                    <p class="text-secondary small mb-0" data-i18n="adv.ai.desc">
+                        Experiencia desarrollando prototipos funcionales que integran modelos de 
+                        lenguaje en flujos de negocio, como automatización de ventas mediante WhatsApp utilizando .NET, Twilio y APIs de IA. 
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- EXPERIENCIA -->
-<section id="experiencia" class="py-5">
+<section id="experiencia" class="py-5 bg-white">
     <div class="container">
-        <h2 class="display-5 fw-semibold text-primary-custom border-accent pb-2 d-inline-block mb-5">Experiencia profesional</h2>
+        <h2 class="display-5 fw-semibold text-primary-custom border-accent pb-2 d-inline-block mb-5" data-i18n="section.exp">Experiencia profesional</h2>
         <div class="row g-4">
+
+            <!-- Global TPA -->
             <div class="col-12">
                 <div class="timeline-item">
                     <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
-                        <h3 class="h3 text-primary-custom">Backend Developer .NET</h3>
-                        <span class="badge bg-secondary-custom text-white px-3 py-2">Ene 2023 – Dic 2025</span>
+                        <h3 class="h3 text-primary-custom" data-i18n="exp2.title">Backend Developer .NET</h3>
+                        <span class="badge bg-secondary-custom text-white px-3 py-2" data-i18n="exp2.date">Ene 2023 – Dic 2025</span>
                     </div>
-                    <p class="fw-semibold text-secondary"><a href="https://www.linkedin.com/company/global-tpa/posts/?feedView=all" target="_blank" class="github-link fw-semibold">Global TPA S.A <i class="fas fa-external-link-alt fa-sm"></i></a></p>
+                    <p class="fw-semibold text-secondary">
+                        <a href="https://www.linkedin.com/company/global-tpa/posts/?feedView=all" target="_blank" class="github-link fw-semibold">
+                            Global TPA S.A <i class="fas fa-external-link-alt fa-sm"></i>
+                        </a>
+                    </p>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i> Desarrollo de aplicaciones web empresariales en C# y .NET.</li>
-                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i> Diseño e implementación de APIs REST y servicios SOAP.</li>
-                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i> Optimización de consultas, procedimientos almacenados e integración de procesos ETL con SSIS en SQL Server.</li>
-                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i> Aplicación de arquitectura N-Capas y principios SOLID para mejorar mantenibilidad y escalabilidad.</li>
-                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i> Mejora de rendimiento en procesos de carga y consultas masivas.</li>
-                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i> Documentación técnica y pruebas de APIs con Swagger.</li>
-                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i> Gestión ágil de proyectos con Jira y Confluence.</li>
-                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i> Automatización y mejora de productividad utilizando herramientas de IA.</li>
+                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i><span data-i18n="exp2.b1">Diseño y mantenimiento de API REST y servicios SOAP para un sistema de gestión de pólizas a gran escala que procesa datos críticos de seguros para miles de asegurados.</span></li>
+                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i><span data-i18n="exp2.b2">Optimización de consultas complejas de SQL Server y procedimientos almacenados, reduciendo el tiempo de procesamiento por lotes en aproximadamente un 40% en operaciones de carga masiva de pólizas mediante el análisis del plan de ejecución y el diseño del índice de cobertura.</span></li>
+                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i><span data-i18n="exp2.b3">Desarrollo de pipelines ETL mediante SSIS (SQL Server Integration Services) para la ingesta y transformación automatizada de datos.</span></li>
+                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i><span data-i18n="exp2.b4">Diseño e implementación de la migración de pipelines ETL legacy basados en SSIS hacia APIs REST desarrolladas en .NET bajo Clean Architecture (Integration, Domain, Infrastructure y WebApi), mejorando el rendimiento, la mantenibilidad y la escalabilidad del sistema.</span></li>
+                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i><span data-i18n="exp2.b5">Integración de Google Maps API (Geocoding & Places) en el flujo de ventas de pólizas domiciliarias, garantizando la existencia física del 100% de los domicilios registrados y eliminando errores de ubicación en la emisión de riesgos críticos.</span></li>
+                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i><span data-i18n="exp2.b6">Desarrollo de un prototipo de automatización de ventas con IA, utilizando .NET Core, Twilio y modelos de lenguaje (Groq) para procesar datos mínimos requeridos, acelerando la velocidad de emisión de pólizas mediante un flujo conversacional inteligente.</span></li>
+                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i><span data-i18n="exp2.b7">Entrega de documentación de API mediante Swagger y gestión de la entrega ágil mediante Jira y Confluence.</span></li>
                     </ul>
-                    <p class="mt-3"><strong>Entorno:</strong> .NET, C#, SQL Server, SSIS, REST, SOAP, JavaScript, Bootstrap.</p>
+                    <p class="mt-3 mb-0"><strong data-i18n="exp2.stack">Entorno tecnológico:</strong> <span data-i18n="exp2.stack.desc">.NET Framework, .NET Core, C#, SQL Server, SSIS, ASP.NET Web API, SOAP, JavaScript, Bootstrap, Google Maps API, Twilio, Groq AI, Jira, Confluence.</span></p>
                 </div>
             </div>
+
+            <!-- ConsigueVentas -->
             <div class="col-12">
                 <div class="timeline-item">
                     <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
-                        <h3 class="h3 text-primary-custom">Analista de Documentación</h3>
-                        <span class="badge bg-secondary-custom text-white px-3 py-2">Ago 2022 – Dic 2022</span>
+                        <h3 class="h3 text-primary-custom" data-i18n="exp1.title">Practicante - Analista de Documentación</h3>
+                        <span class="badge bg-secondary-custom text-white px-3 py-2" data-i18n="exp1.date">Ago 2022 – Dic 2022</span>
                     </div>
-                    <p class="fw-semibold text-secondary"><a href="https://www.linkedin.com/company/consigueventas/" target="_blank" class="github-link fw-semibold">Grupo ConsigueVentas Inversiones E.I.R.L <i class="fas fa-external-link-alt fa-sm"></i></a></p>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i> Levantamiento y definición de requisitos funcionales y no funcionales.</li>
-                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i> Elaboración de documentación técnica bajo Scrum.</li>
-                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i> Diseño de diagramas técnicos y de arquitectura.</li>
-                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i> Rol de Scrum Master durante 1 sprint completo (4 semanas).</li>
+                    <p class="fw-semibold text-secondary">
+                        <a href="https://www.linkedin.com/company/consigueventas/" target="_blank" class="github-link fw-semibold">
+                            Grupo ConsigueVentas Inversiones E.I.R.L <i class="fas fa-external-link-alt fa-sm"></i>
+                        </a>
+                    </p>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i><span data-i18n="exp1.b1">Definición de requisitos funcionales y no funcionales para proyectos de software utilizando la metodología Scrum.</span></li>
+                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i><span data-i18n="exp1.b2">Elaboración de diagramas de arquitectura técnica y documentación del sistema alineados con los flujos de trabajo del equipo de desarrollo.</span></li>
+                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i><span data-i18n="exp1.b3">Desempeño del cargo de Scrum Master durante un sprint completo (4 semanas), facilitando ceremonias y eliminando obstáculos del equipo.</span></li>
+                        <li class="mb-2"><i class="fas fa-circle me-2 text-primary-custom small"></i><span data-i18n="exp1.b4">Colaboración con el equipo de desarrollo en la gestión de historias de usuario, backlog y documentación funcional para mejorar la comunicación entre las áreas de negocio y tecnología.</span></li>
                     </ul>
+                    <p class="mt-3 mb-0"><strong data-i18n="exp1.stack">Entorno tecn2lógico:</strong> <span data-i18n="exp1.stack.desc"> Scrum, Trello, Diagramas de arquitectura, Documentación técnica, Gestión de requisitos.</span></p>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
@@ -119,60 +226,64 @@
 <!-- HABILIDADES TÉCNICAS -->
 <section id="habilidades" class="py-5">
     <div class="container">
-        <h2 class="display-5 fw-semibold text-primary-custom border-accent pb-2 d-inline-block mb-5">Conocimientos técnicos</h2>
+        <h2 class="display-5 fw-semibold text-primary-custom border-accent pb-2 d-inline-block mb-5" data-i18n="section.skills">Conocimientos técnicos</h2>
         <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-xl-3">
                 <div class="card h-100 border-0 shadow-sm p-3">
-                    <h3 class="h5 fw-bold text-primary-custom">Backend</h3>
-                    <div class="d-flex flex-wrap gap-2 mt-3">
-                        <span class="skill-badge advanced text-white">C# (Intermedio-Avanzado)</span>
-                        <span class="skill-badge">.NET</span>
-                        <span class="skill-badge">API REST & SOAP</span>
-                        <span class="skill-badge">Arquitectura N-Capas</span>
-                        <span class="skill-badge">Principios SOLID</span>
-                        <span class="skill-badge">Clean Code</span>
-                        <span class="skill-badge">PHP (Intermedio)</span>
-                        <span class="skill-badge">Python (Básico)</span>
-                        <span class="skill-badge">Java (Básico)</span>
+                    <h3 class="h5 fw-bold text-primary-custom mb-3">Backend</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="skill-badge advanced text-white">C# (<span data-i18n="skills.b2">Intermedio</span>-<span data-i18n="skills.b1">Avanzado</span>)</span>
+                        <span class="skill-badge">.NET Core 8</span>
+                        <span class="skill-badge">ASP.NET MVC</span>
+                        <span class="skill-badge">N-Capas</span>
+                        <span class="skill-badge">REST APIs</span>
+                        <span class="skill-badge">Clean Architecture</span>
+                        <span class="skill-badge">SOLID Principles</span>
+                        <span class="skill-badge">PHP (<span data-i18n="skills.b2">Intermedio</span>)</span>
+                        <span class="skill-badge">Python (<span data-i18n="skills.b3">Básico</span>)</span>
+                        <span class="skill-badge">Java (<span data-i18n="skills.b3">Básico</span>)</span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-xl-3">
                 <div class="card h-100 border-0 shadow-sm p-3">
-                    <h3 class="h5 fw-bold text-primary-custom">Bases de Datos</h3>
-                    <div class="d-flex flex-wrap gap-2 mt-3">
-                        <span class="skill-badge advanced text-white">SQL Server (Avanzado)</span>
-                        <span class="skill-badge">Optimización consultas</span>
+                    <h3 class="h5 fw-bold text-primary-custom mb-3">Bases de Datos</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="skill-badge advanced text-white">SQL Server (<span data-i18n="skills.b1">Avanzado</span>)</span>
+                        <span class="skill-badge">Query Optimization</span>
                         <span class="skill-badge">Stored Procedures</span>
+                        <span class="skill-badge">Execution Plans</span>
+                        <span class="skill-badge">Index Design</span>
                         <span class="skill-badge">SSIS</span>
-                        <span class="skill-badge">MySQL (Intermedio)</span>
-                        <span class="skill-badge">Oracle (Básico)</span>
-                        <span class="skill-badge">PostgreSQL (Básico)</span>
-                        <span class="skill-badge">MongoDB (Básico)</span>
+                        <span class="skill-badge">MySQL (<span data-i18n="skills.b2">Intermedio</span>)</span>
+                        <span class="skill-badge">Oracle (<span data-i18n="skills.b3">Básico</span>)</span>
+                        <span class="skill-badge">MongoDB (<span data-i18n="skills.b3">Básico</span>)</span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-xl-3">
                 <div class="card h-100 border-0 shadow-sm p-3">
-                    <h3 class="h5 fw-bold text-primary-custom">Frontend complementario</h3>
-                    <div class="d-flex flex-wrap gap-2 mt-3">
-                        <span class="skill-badge">JavaScript (Intermedio)</span>
-                        <span class="skill-badge">jQuery (Intermedio)</span>
-                        <span class="skill-badge">HTML / CSS (Intermedio-Avanzado)</span>
+                    <h3 class="h5 fw-bold text-primary-custom mb-3">Frontend</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="skill-badge advanced text-white">JavaScript (<span data-i18n="skills.b2">Intermedio</span>)</span>
+                        <span class="skill-badge">HTML5 / CSS3</span>
                         <span class="skill-badge">Bootstrap</span>
-                        <span class="skill-badge">Angular (Básico)</span>
+                        <span class="skill-badge">JQuery</span>
+                        <span class="skill-badge">Razor</span>
+                        <span class="skill-badge">Angular (<span data-i18n="skills.b3">Básico</span>)</span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-xl-3">
                 <div class="card h-100 border-0 shadow-sm p-3">
-                    <h3 class="h5 fw-bold text-primary-custom">Dev & Gestión</h3>
-                    <div class="d-flex flex-wrap gap-2 mt-3">
-                        <span class="skill-badge">Git (Intermedio)</span>
+                    <h3 class="h5 fw-bold text-primary-custom mb-3">Tools & Platforms</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">Swagger</span>
                         <span class="skill-badge">Jira</span>
                         <span class="skill-badge">Confluence</span>
-                        <span class="skill-badge">Azure (Básico)</span>
-                        <span class="skill-badge">AWS (Básico)</span>
+                        <span class="skill-badge">AWS</span>
+                        <span class="skill-badge">Azure</span>
                     </div>
                 </div>
             </div>
@@ -180,243 +291,464 @@
     </div>
 </section>
 
-<!-- VENTAJA COMPETITIVA -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="display-5 fw-semibold text-primary-custom border-accent pb-2 d-inline-block mb-5">Ventaja competitiva</h2>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 text-center p-4 border-0 shadow-sm">
-                    <i class="fas fa-rocket fa-3x text-primary-custom mb-3"></i>
-                    <h4 class="h5 fw-bold">Optimización de legado</h4>
-                    <p class="text-secondary">Capacidad de optimizar sistemas existentes sin reestructuración completa.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 text-center p-4 border-0 shadow-sm">
-                    <i class="fas fa-tachometer-alt fa-3x text-primary-custom mb-3"></i>
-                    <h4 class="h5 fw-bold">Performance & calidad</h4>
-                    <p class="text-secondary">Enfoque en rendimiento, escalabilidad y buenas prácticas técnicas.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 text-center p-4 border-0 shadow-sm">
-                    <i class="fas fa-robot fa-3x text-primary-custom mb-3"></i>
-                    <h4 class="h5 fw-bold">IA como aliado</h4>
-                    <p class="text-secondary">Uso estratégico de IA para aumentar productividad y reducir tiempos.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 text-center p-4 border-0 shadow-sm">
-                    <i class="fas fa-shield-alt fa-3x text-primary-custom mb-3"></i>
-                    <h4 class="h5 fw-bold">Experiencia en seguros</h4>
-                    <p class="text-secondary">Sistemas empresariales reales en el sector asegurador (pólizas masivas).</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- PORTAFOLIO GITHUB -->
+<!-- PROYECTOS -->
 <section id="portafolio" class="py-5">
     <div class="container">
-        <h2 class="display-5 fw-semibold text-primary-custom border-accent pb-2 d-inline-block mb-5">Proyectos destacados</h2>
-        <p class="mb-4">
+        <h2 class="display-5 fw-semibold text-primary-custom border-accent pb-2 d-inline-block mb-2" data-i18n="section.projects">Proyectos destacados</h2>
+        <p class="text-secondary mb-4">
             <i class="fab fa-github me-2 text-primary-custom"></i>
-            Puedes ver más en mi 
-            <a href="https://github.com/Joseluis30c" target="_blank" class="github-link fw-semibold">GitHub <i class="fas fa-external-link-alt fa-sm"></i></a>
+            <span data-i18n="projects.more">Puedes ver más en mi</span>
+            <a href="https://github.com/Joseluis30c?tab=repositories" target="_blank" class="github-link fw-semibold ms-1">
+                GitHub <i class="fas fa-external-link-alt fa-sm"></i>
+            </a>
         </p>
+
+        <!-- Filter -->
+        <div class="d-flex flex-wrap gap-2 mb-5" role="group" aria-label="Filtrar proyectos">
+            <button class="filter-btn active" data-filter="all" data-i18n="filter.all">Todos</button>
+            <button class="filter-btn" data-filter="net">.NET / C#</button>
+            <button class="filter-btn" data-filter="java">Java</button>
+            <button class="filter-btn" data-filter="php">PHP</button>
+            <button class="filter-btn" data-filter="python">Python</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+        </div>
+
         <div class="row g-4">
             <!-- MyRoadMap -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card project-card p-3">
-                    <i class="fas fa-map-signs fa-3x text-primary-custom mb-3"></i>
-                    <h3 class="h5 fw-bold">MyRoadMap .NET</h3>
-                    <p class="text-secondary small">Ruta de aprendizaje interactiva. Organiza y visualiza semanas de estudio con recursos y ejercicios.</p>
-                    <div class="mt-2 d-flex flex-wrap gap-2">                        
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">Angular</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">HTML</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">CSS</span>
+            <div class="col-md-6 col-lg-4 project-col" data-tech="net web">
+                <div class="card project-card">
+                    <div id="car-myroadmap" class="carousel slide project-carousel" data-bs-ride="false" data-icon="fa-map-signs">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="assets/img/portfolio/myroadmap1.png" class="project-card-img" alt="MyRoadMap 1" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/myroadmap2.png" class="project-card-img" alt="MyRoadMap 2" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/myroadmap3.png" class="project-card-img" alt="MyRoadMap 3" loading="lazy"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car-myroadmap" data-bs-slide="prev" aria-label="Anterior"></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car-myroadmap" data-bs-slide="next" aria-label="Siguiente"></button>
+                        <div class="carousel-indicators project-carousel-indicators">
+                            <button type="button" data-bs-target="#car-myroadmap" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                            <button type="button" data-bs-target="#car-myroadmap" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#car-myroadmap" data-bs-slide-to="2"></button>
+                        </div>
                     </div>
-                    <div class="mt-3">
-                        <a href="https://github.com/Joseluis30c/myroadmap" target="_blank" class="btn btn-sm btn-outline-primary w-100">Ver en GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <!-- EncriptamientoWindowsForm -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card project-card p-3">
-                    <i class="fas fa-lock fa-3x text-primary-custom mb-3"></i>
-                    <h3 class="h5 fw-bold">Encriptamiento RSA</h3>
-                    <p class="text-secondary small">Aplicación de escritorio para encriptar y desencriptar texto usando algoritmos simétricos.</p>
-                    <div class="mt-2 d-flex flex-wrap gap-2">
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">C#</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">.NET</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">Windows Forms</span>
-                    </div>
-                    <div class="mt-3">
-                        <a href="https://github.com/Joseluis30c/EncriptamientoWindowsForm" target="_blank" class="btn btn-sm btn-outline-primary w-100">Ver en GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Flujo-WA -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card project-card p-3">
-                    <i class="fab fa-whatsapp fa-3x text-primary-custom mb-3"></i>
-                    <h3 class="h5 fw-bold">Flujo WhatsApp Agent IA</h3>
-                    <p class="text-secondary small">Agente automatizado para consultas SOAT vía WhatsApp. Implementado en C# con integración de APIs y modelos de IA.</p>
-                    <div class="mt-2 d-flex flex-wrap gap-2">
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">C#</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">.NET</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">API</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">IA</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">Twilio</span>
-                    </div>
-                    <div class="mt-3">
-                        <a href="https://github.com/Joseluis30c/Flujo-WA" target="_blank" class="btn btn-sm btn-outline-primary w-100">Ver en GitHub</a>
+                    <div class="card-body d-flex flex-column p-3">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="fas fa-map-signs text-primary-custom"></i>
+                            <h3 class="h5 fw-bold mb-0" data-i18n="proj.roadmap.name">MyRoadMap .NET</h3>
+                        </div>
+                        <p class="text-secondary small flex-grow-1" data-i18n="proj.roadmap.desc">Ruta de aprendizaje interactiva de 24 semanas. Visualiza semanas de estudio con recursos y ejercicios.</p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">Angular</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">HTML</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">CSS</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://myroadmapnet.netlify.app/" target="_blank" class="btn btn-sm project-btn-demo w-50" aria-disabled="true">
+                                <i class="fas fa-external-link-alt me-1"></i>Demo
+                            </a>
+                            <a href="https://github.com/Joseluis30c/myroadmap" target="_blank" class="btn btn-sm btn-outline-primary w-50">
+                                <i class="fab fa-github me-1"></i>GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- GeneradorHTML_PDF -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card project-card p-3">
-                    <i class="fas fa-file-pdf fa-3x text-primary-custom mb-3"></i>
-                    <h3 class="h5 fw-bold">Generador HTML a PDF</h3>
-                    <p class="text-secondary small">Utilidad en C# para convertir documentos HTML a PDF. Ideal para reportes y facturas.</p>
-                    <div class="mt-2 d-flex flex-wrap gap-2">
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">C#</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">.NET</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">HTML</span>
+
+            <!-- Encriptamiento RSA -->
+            <div class="col-md-6 col-lg-4 project-col" data-tech="net">
+                <div class="card project-card">
+                    <div id="car-encriptamiento" class="carousel slide project-carousel" data-bs-ride="false" data-icon="fa-lock">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="assets/img/portfolio/encrypt1.png" class="project-card-img" alt="Encriptamiento 1" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/encrypt2.png" class="project-card-img" alt="Encriptamiento 2" loading="lazy"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car-encriptamiento" data-bs-slide="prev" aria-label="Anterior"></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car-encriptamiento" data-bs-slide="next" aria-label="Siguiente"></button>
+                        <div class="carousel-indicators project-carousel-indicators">
+                            <button type="button" data-bs-target="#car-encriptamiento" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#car-encriptamiento" data-bs-slide-to="1"></button>
+                        </div>
                     </div>
-                    <div class="mt-3">
-                        <a href="https://github.com/Joseluis30c/GeneradorHTML_PDF" target="_blank" class="btn btn-sm btn-outline-primary w-100">Ver en GitHub</a>
+                    <div class="card-body d-flex flex-column p-3">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="fas fa-lock text-primary-custom"></i>
+                            <h3 class="h5 fw-bold mb-0" data-i18n="proj.enc.name">Encriptamiento RSA</h3>
+                        </div>
+                        <p class="text-secondary small flex-grow-1" data-i18n="proj.enc.desc">Aplicación de escritorio para encriptar y desencriptar texto usando algoritmos simétricos.</p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">C#</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">.NET</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">Windows Forms</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://github.com/Joseluis30c/EncriptamientoWindowsForm" target="_blank" class="btn btn-sm btn-outline-primary w-50">
+                                <i class="fab fa-github me-1"></i>GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Flujo WhatsApp IA -->
+            <div class="col-md-6 col-lg-4 project-col" data-tech="net">
+                <div class="card project-card">
+                    <div id="car-flujo-wa" class="carousel slide project-carousel" data-bs-ride="false" data-icon="fa-whatsapp">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="assets/img/portfolio/wa.png" class="project-card-img" alt="WhatsApp 1" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/wa2.png" class="project-card-img" alt="WhatsApp 1" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/wa3.png" class="project-card-img" alt="WhatsApp 1" loading="lazy"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car-flujo-wa" data-bs-slide="prev" aria-label="Anterior"></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car-flujo-wa" data-bs-slide="next" aria-label="Siguiente"></button>
+                        <div class="carousel-indicators project-carousel-indicators">
+                            <button type="button" data-bs-target="#car-flujo-wa" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#car-flujo-wa" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#car-flujo-wa" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column p-3">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="fab fa-whatsapp text-primary-custom"></i>
+                            <h3 class="h5 fw-bold mb-0" data-i18n="proj.wa.name">Flujo WhatsApp Agent IA</h3>
+                        </div>
+                        <p class="text-secondary small flex-grow-1" data-i18n="proj.wa.desc">Agente automatizado para consultas SOAT vía WhatsApp con integración de APIs y modelos de IA.</p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">C#</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">.NET</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">Twilio</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">IA</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://github.com/Joseluis30c/Flujo-WA" target="_blank" class="btn btn-sm btn-outline-primary w-50">
+                                <i class="fab fa-github me-1"></i>GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Generador HTML→PDF -->
+            <div class="col-md-6 col-lg-4 project-col" data-tech="net">
+                <div class="card project-card">
+                    <div id="car-pdf" class="carousel slide project-carousel" data-bs-ride="false" data-icon="fa-file-pdf">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="assets/img/portfolio/htmltopdf.png" class="project-card-img" alt="PDF Generator" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/htmltopdf2.png" class="project-card-img" alt="PDF Generator 2" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/htmltopdf3.png" class="project-card-img" alt="PDF Generator 3" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/htmltopdf4.png" class="project-card-img" alt="PDF Generator 4" loading="lazy"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car-pdf" data-bs-slide="prev" aria-label="Anterior"></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car-pdf" data-bs-slide="next" aria-label="Siguiente"></button>
+                        <div class="carousel-indicators project-carousel-indicators">
+                            <button type="button" data-bs-target="#car-pdf" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#car-pdf" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#car-pdf" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#car-pdf" data-bs-slide-to="3"></button>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex flex-column p-3">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="fas fa-file-pdf text-primary-custom"></i>
+                            <h3 class="h5 fw-bold mb-0" data-i18n="proj.pdf.name">Generador HTML a PDF</h3>
+                        </div>
+                        <p class="text-secondary small flex-grow-1" data-i18n="proj.pdf.desc">Utilidad en C# para convertir documentos HTML a PDF. Ideal para reportes y facturas.</p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">C#</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">.NET</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">HTML</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://github.com/Joseluis30c/GeneradorHTML_PDF" target="_blank" class="btn btn-sm btn-outline-primary w-50">
+                                <i class="fab fa-github me-1"></i>GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Portfolio -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card project-card p-3">
-                    <i class="fas fa-briefcase fa-3x text-primary-custom mb-3"></i>
-                    <h3 class="h5 fw-bold">Portfolio</h3>
-                    <p class="text-secondary small">Versiones de mi portafolio profesional. Diseño responsive y minimalista.</p>
-                    <div class="mt-2 d-flex flex-wrap gap-2">
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">HTML</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">CSS</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">JavaScript</span>
+            <div class="col-md-6 col-lg-4 project-col" data-tech="web">
+                <div class="card project-card">
+                    <div id="car-portfolio" class="carousel slide project-carousel" data-bs-ride="false" data-icon="fa-briefcase">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="assets/img/portfolio/portafolio.png" class="project-card-img" alt="Portfolio 1" loading="lazy"></div>
+                        </div>
                     </div>
-                    <div class="mt-3">
-                        <a href="https://github.com/Joseluis30c/Portfolio" target="_blank" class="btn btn-sm btn-outline-primary w-100">Ver en GitHub</a>
+                    <div class="card-body d-flex flex-column p-3">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="fas fa-briefcase text-primary-custom"></i>
+                            <h3 class="h5 fw-bold mb-0" data-i18n="proj.port.name">Portfolio</h3>
+                        </div>
+                        <p class="text-secondary small flex-grow-1" data-i18n="proj.port.desc">Versiones de mi portafolio profesional. Diseño responsive y minimalista.</p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">HTML</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">CSS</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">JavaScript</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://joseluischavestarivas.netlify.app/" target="_blank" class="btn btn-sm project-btn-demo w-50">
+                                <i class="fas fa-external-link-alt me-1"></i>Demo
+                            </a>
+                            <a href="https://github.com/Joseluis30c/Portfolio" target="_blank" class="btn btn-sm btn-outline-primary w-50">
+                                <i class="fab fa-github me-1"></i>GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <!-- Invitación -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card project-card p-3">
-                    <i class="fas fa-birthday-cake fa-3x text-primary-custom mb-3"></i>
-                    <h3 class="h5 fw-bold">Invitación de Cumpleaños</h3>
-                    <p class="text-secondary small">Tarjeta de cumpleaños interactiva y responsive. Animaciones suaves y diseño atractivo.</p>
-                    <div class="mt-2 d-flex flex-wrap gap-2">
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">HTML</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">CSS</span>
+            <div class="col-md-6 col-lg-4 project-col" data-tech="web">
+                <div class="card project-card">
+                    <div id="car-invitacion" class="carousel slide project-carousel" data-bs-ride="false" data-icon="fa-birthday-cake">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="assets/img/portfolio/invitacion1.png" class="project-card-img" alt="Invitación" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/invitacion2.png" class="project-card-img" alt="Invitación" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/invitacion3.png" class="project-card-img" alt="Invitación" loading="lazy"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car-invitacion" data-bs-slide="prev" aria-label="Anterior"><i class="fas fa-angle-left"></i></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car-invitacion" data-bs-slide="next" aria-label="Siguiente"><i class="fas fa-angle-right"></i></button>
+                        <div class="carousel-indicators project-carousel-indicators">
+                            <button type="button" data-bs-target="#car-invitacion" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                            <button type="button" data-bs-target="#car-invitacion" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#car-invitacion" data-bs-slide-to="2"></button>
+                        </div>
                     </div>
-                    <div class="mt-3">
-                        <a href="https://github.com/Joseluis30c/Invitacion" target="_blank" class="btn btn-sm btn-outline-primary w-100">Ver en GitHub</a>
+                    <div class="card-body d-flex flex-column p-3">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="fas fa-birthday-cake text-primary-custom"></i>
+                            <h3 class="h5 fw-bold mb-0" data-i18n="proj.inv.name">Invitación de Cumpleaños</h3>
+                        </div>
+                        <p class="text-secondary small flex-grow-1" data-i18n="proj.inv.desc">Tarjeta de cumpleaños interactiva y responsive con animaciones CSS suaves.</p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">HTML</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">CSS</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://teinvitoamicumpleanos.netlify.app/" target="_blank" class="btn btn-sm project-btn-demo w-50" aria-disabled="true">
+                                <i class="fas fa-external-link-alt me-1"></i>Demo
+                            </a>
+                            <a href="https://github.com/Joseluis30c/Invitacion" target="_blank" class="btn btn-sm btn-outline-primary w-50">
+                                <i class="fab fa-github me-1"></i>GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <!-- Sistema Control Inventario -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card project-card p-3">
-                    <i class="fas fa-archive fa-3x text-primary-custom mb-3"></i>
-                    <h3 class="h5 fw-bold">Sistema Control Inventario</h3>
-                    <p class="text-secondary small">Aplicación web para gestión de inventarios con panel administrativo y base de datos.</p>
-                    <div class="mt-2 d-flex flex-wrap gap-2">
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">PHP</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">JavaScript</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">SCSS</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">MySQL</span>
+            <div class="col-md-6 col-lg-4 project-col" data-tech="php web">
+                <div class="card project-card">
+                    <div id="car-inventario" class="carousel slide project-carousel" data-bs-ride="false" data-icon="fa-archive">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="assets/img/portfolio/gucci1.png" class="project-card-img" alt="Inventario 1" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/gucci2.png" class="project-card-img" alt="Inventario 2" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/gucci3.png" class="project-card-img" alt="Inventario 3" loading="lazy"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car-inventario" data-bs-slide="prev" aria-label="Anterior"></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car-inventario" data-bs-slide="next" aria-label="Siguiente"></button>
+                        <div class="carousel-indicators project-carousel-indicators">
+                            <button type="button" data-bs-target="#car-inventario" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#car-inventario" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#car-inventario" data-bs-slide-to="2"></button>
+                        </div>
                     </div>
-                    <div class="mt-3">
-                        <a href="https://github.com/Joseluis30c/SIstema-Control-Inventario" target="_blank" class="btn btn-sm btn-outline-primary w-100">Ver en GitHub</a>
+                    <div class="card-body d-flex flex-column p-3">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="fas fa-archive text-primary-custom"></i>
+                            <h3 class="h5 fw-bold mb-0" data-i18n="proj.scinv.name">Sistema Control Inventario</h3>
+                        </div>
+                        <p class="text-secondary small flex-grow-1" data-i18n="proj.scinv.desc">Aplicación web para gestión de inventarios con panel administrativo y base de datos.</p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">PHP</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">JavaScript</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">MySQL</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://sistemainventario.infinityfreeapp.com/index.php" target="_blank" class="btn btn-sm project-btn-demo w-50" aria-disabled="true">
+                                <i class="fas fa-external-link-alt me-1"></i>Demo
+                            </a>
+                            <a href="https://github.com/Joseluis30c/SIstema-Control-Inventario" target="_blank" class="btn btn-sm btn-outline-primary w-50">
+                                <i class="fab fa-github me-1"></i>GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Sistema Ecommerce PHP -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card project-card p-3">
-                    <i class="fab fa-php fa-3x text-primary-custom mb-3"></i>
-                    <h3 class="h5 fw-bold">Sistema Ecommerce PHP</h3>
-                    <p class="text-secondary small">Estructura básica de un ecommerce con PHP y CSS. Ideal para entender flujos de compra y sesiones.</p>
-                    <div class="mt-2 d-flex flex-wrap gap-2">
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">PHP</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">CSS</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">MySQL</span>
+
+            <!-- Ecommerce PHP -->
+            <div class="col-md-6 col-lg-4 project-col" data-tech="php web">
+                <div class="card project-card">
+                    <div id="car-ecommerce" class="carousel slide project-carousel" data-bs-ride="false" data-icon="fa-shopping-cart">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="assets/img/portfolio/abarrotes1.png" class="project-card-img" alt="Ecommerce" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/abarrotes2.png" class="project-card-img" alt="Ecommerce 2" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/abarrotes3.png" class="project-card-img" alt="Ecommerce 3" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/abarrotes4.png" class="project-card-img" alt="Ecommerce 4" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/abarrotes5.png" class="project-card-img" alt="Ecommerce 5" loading="lazy"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car-ecommerce" data-bs-slide="prev" aria-label="Anterior"><i class="fas fa-angle-left"></i></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car-ecommerce" data-bs-slide="next" aria-label="Siguiente"><i class="fas fa-angle-right"></i></button>
+                        <div class="carousel-indicators project-carousel-indicators">
+                            <button type="button" data-bs-target="#car-ecommerce" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                            <button type="button" data-bs-target="#car-ecommerce" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#car-ecommerce" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#car-ecommerce" data-bs-slide-to="3"></button>
+                            <button type="button" data-bs-target="#car-ecommerce" data-bs-slide-to="4"></button>
+                        </div>
                     </div>
-                    <div class="mt-3">
-                        <a href="https://github.com/Joseluis30c/Sistema-Ecommerce-PHP" target="_blank" class="btn btn-sm btn-outline-primary w-100">Ver en GitHub</a>
+                    <div class="card-body d-flex flex-column p-3">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="fab fa-php text-primary-custom"></i>
+                            <h3 class="h5 fw-bold mb-0" data-i18n="proj.eco.name">Sistema Ecommerce PHP</h3>
+                        </div>
+                        <p class="text-secondary small flex-grow-1" data-i18n="proj.eco.desc">Estructura básica de un ecommerce con PHP y CSS. Flujos de compra y sesiones.</p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">PHP</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">CSS</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">MySQL</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://toeatsistemaecommerce.infinityfreeapp.com/" target="_blank" class="btn btn-sm project-btn-demo w-50">
+                                <i class="fas fa-external-link-alt me-1"></i>Demo
+                            </a>
+                            <a href="https://github.com/Joseluis30c/Sistema-Ecommerce-PHP" target="_blank" class="btn btn-sm btn-outline-primary w-50">
+                                <i class="fab fa-github me-1"></i>GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <!-- VentaLaptops JavaWeb -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card project-card p-3">
-                    <i class="fas fa-laptop fa-3x text-primary-custom mb-3"></i>
-                    <h3 class="h5 fw-bold">VentaLaptops JavaWeb</h3>
-                    <p class="text-secondary small">Aplicación web para tienda de laptops con carrito de compras y base de datos MySQL.</p>
-                    <div class="mt-2 d-flex flex-wrap gap-2">
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">Java</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">JSP</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">Servlet</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">MySQL</span>
+            <div class="col-md-6 col-lg-4 project-col" data-tech="java web">
+                <div class="card project-card">
+                    <div id="car-laptops" class="carousel slide project-carousel" data-bs-ride="false" data-icon="fa-laptop">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="assets/img/projects/ventalaptops/1.jpg" class="project-card-img" alt="VentaLaptops" loading="lazy"></div>
+                        </div>
                     </div>
-                    <div class="mt-3">
-                        <a href="https://github.com/Joseluis30c/VentaLaptops_JavaWeb" target="_blank" class="btn btn-sm btn-outline-primary w-100">Ver en GitHub</a>
+                    <div class="card-body d-flex flex-column p-3">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="fas fa-laptop text-primary-custom"></i>
+                            <h3 class="h5 fw-bold mb-0" data-i18n="proj.laptops.name">Venta Laptops JavaWeb</h3>
+                        </div>
+                        <p class="text-secondary small flex-grow-1" data-i18n="proj.laptops.desc">Tienda de laptops con carrito de compras, sesiones y base de datos MySQL.</p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">Java</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">JSP</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">Servlet</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">MySQL</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://github.com/Joseluis30c/VentaLaptops_JavaWeb" target="_blank" class="btn btn-sm btn-outline-primary w-50">
+                                <i class="fab fa-github me-1"></i>GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <!-- Pago pensión JavaSwing -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card project-card p-3">
-                    <i class="fab fa-java fa-3x text-primary-custom mb-3"></i>
-                    <h3 class="h5 fw-bold">Pago pensión JavaSwing</h3>
-                    <p class="text-secondary small">Aplicación de escritorio para administrar pagos de pensiones. Incluye interfaz gráfica con Java Swing.</p>
-                    <div class="mt-2 d-flex flex-wrap gap-2">
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">Java</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">Swing</span>
+            <div class="col-md-6 col-lg-4 project-col" data-tech="java">
+                <div class="card project-card">
+                    <div id="car-pension" class="carousel slide project-carousel" data-bs-ride="false" data-icon="fa-java">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="assets/img/portfolio/pago_pension1.png" class="project-card-img" alt="Pago pension" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/pago_pension2.png" class="project-card-img" alt="Pago pension 2" loading="lazy"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car-pension" data-bs-slide="prev" aria-label="Anterior"><i class="fas fa-angle-left"></i></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car-pension" data-bs-slide="next" aria-label="Siguiente"><i class="fas fa-angle-right"></i></button>
+                        <div class="carousel-indicators project-carousel-indicators">
+                            <button type="button" data-bs-target="#car-pension" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                            <button type="button" data-bs-target="#car-pension" data-bs-slide-to="1"></button>
+                        </div>
                     </div>
-                    <div class="mt-3">
-                        <a href="https://github.com/Joseluis30c/Pago-pension-JavaSwing" target="_blank" class="btn btn-sm btn-outline-primary w-100">Ver en GitHub</a>
+                    <div class="card-body d-flex flex-column p-3">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="fab fa-java text-primary-custom"></i>
+                            <h3 class="h5 fw-bold mb-0" data-i18n="proj.pension.name">Pago pensión JavaSwing</h3>
+                        </div>
+                        <p class="text-secondary small flex-grow-1" data-i18n="proj.pension.desc">Aplicación de escritorio para administrar pagos de pensiones con interfaz Java Swing.</p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">Java</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">Swing</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://drive.google.com/file/d/1rq7lUXsTJxYk6bpihFX3TaVp16hITnk1/view?usp=sharing" target="_blank" class="btn btn-sm project-btn-demo w-50" aria-disabled="true">
+                                <i class="fas fa-desktop me-1"></i>Desktop
+                            </a>
+                            <a href="https://github.com/Joseluis30c/Pago-pension-JavaSwing" target="_blank" class="btn btn-sm btn-outline-primary w-50">
+                                <i class="fab fa-github me-1"></i>GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- MiniFactura Farmacia Java -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card project-card p-3">
-                    <i class="fab fa-java fa-3x text-primary-custom mb-3"></i>
-                    <h3 class="h5 fw-bold">Mini Factura Farmacia Java</h3>
-                    <p class="text-secondary small">Aplicación de escritorio en Java para generar facturas básicas de productos de una farmacia.</p>
-                    <div class="mt-2 d-flex flex-wrap gap-2">
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">Java</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">Swing</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">JDBC</span>
+
+            <!-- Mini Factura Farmacia -->
+            <div class="col-md-6 col-lg-4 project-col" data-tech="java">
+                <div class="card project-card">
+                    <div id="car-farmacia" class="carousel slide project-carousel" data-bs-ride="false" data-icon="fa-prescription-bottle">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="assets/img/portfolio/farmacia.png" class="project-card-img" alt="Farmacia Java" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/farmacia2.png" class="project-card-img" alt="Farmacia Java 2" loading="lazy"></div>
+                            <div class="carousel-item"><img src="assets/img/portfolio/farmacia3.png" class="project-card-img" alt="Farmacia Java 3" loading="lazy"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car-farmacia" data-bs-slide="prev" aria-label="Anterior"><i class="fas fa-angle-left"></i></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car-farmacia" data-bs-slide="next" aria-label="Siguiente"><i class="fas fa-angle-right"></i></button>
+                        <div class="carousel-indicators project-carousel-indicators">
+                            <button type="button" data-bs-target="#car-farmacia" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                            <button type="button" data-bs-target="#car-farmacia" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#car-farmacia" data-bs-slide-to="2"></button>
+                        </div>
                     </div>
-                    <div class="mt-3">
-                        <a href="https://github.com/Joseluis30c/Mini-Farmacia-Java" target="_blank" class="btn btn-sm btn-outline-primary w-100">Ver en GitHub</a>
+                    <div class="card-body d-flex flex-column p-3">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="fab fa-java text-primary-custom"></i>
+                            <h3 class="h5 fw-bold mb-0" data-i18n="proj.farm.name">Mini Factura Farmacia Java</h3>
+                        </div>
+                        <p class="text-secondary small flex-grow-1" data-i18n="proj.farm.desc">App de escritorio en Java para generar facturas básicas de productos de una farmacia.</p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">Java</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">Swing</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">JDBC</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://drive.google.com/file/d/1382EVoSUffsrxqmHNPiMGDhhOz938j2H/view?usp=sharing" target="_blank" class="btn btn-sm project-btn-demo w-50" aria-disabled="true">
+                                <i class="fas fa-desktop me-1"></i>Desktop
+                            </a>
+                            <a href="https://github.com/Joseluis30c/Mini-Farmacia-Java" target="_blank" class="btn btn-sm btn-outline-primary w-50">
+                                <i class="fab fa-github me-1"></i>GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <!-- Ejercicios de Python -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card project-card p-3">
-                    <i class="fab fa-python fa-3x text-primary-custom mb-3"></i>
-                    <h3 class="h5 fw-bold">Ejercicios de Python</h3>
-                    <p class="text-secondary small">Colección de scripts y ejercicios prácticos para afianzar conceptos del lenguaje.</p>
-                    <div class="mt-2 d-flex flex-wrap gap-2">
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">Python</span>
-                        <span class="badge bg-secondary bg-opacity-10 text-dark">Lógica</span>
+            <div class="col-md-6 col-lg-4 project-col" data-tech="python">
+                <div class="card project-card">
+                    <div id="car-python" class="carousel slide project-carousel" data-bs-ride="false" data-icon="fa-python">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="assets/img/portfolio/python.png" class="project-card-img" alt="Python" loading="lazy"></div>
+                        </div>
                     </div>
-                    <div class="mt-3">
-                        <a href="https://github.com/Joseluis30c/Ejercicios-de-Python" target="_blank" class="btn btn-sm btn-outline-primary w-100">Ver en GitHub</a>
+                    <div class="card-body d-flex flex-column p-3">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="fab fa-python text-primary-custom"></i>
+                            <h3 class="h5 fw-bold mb-0" data-i18n="proj.py.name">Ejercicios de Python</h3>
+                        </div>
+                        <p class="text-secondary small flex-grow-1" data-i18n="proj.py.desc">Colección de scripts y ejercicios prácticos para afianzar conceptos del lenguaje.</p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">Python</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark">Lógica</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://github.com/Joseluis30c/Ejercicios-de-Python" target="_blank" class="btn btn-sm btn-outline-primary w-50">
+                                <i class="fab fa-github me-1"></i>GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -425,16 +757,18 @@
 </section>
 
 <!-- FORMACIÓN -->
-<section class="py-5">
+<section class="py-5 bg-white">
     <div class="container">
-        <h2 class="display-5 fw-semibold text-primary-custom border-accent pb-2 d-inline-block mb-5">Formación</h2>
+        <h2 class="display-5 fw-semibold text-primary-custom border-accent pb-2 d-inline-block mb-5" data-i18n="section.education">Formación</h2>
         <div class="card border-0 shadow-sm p-4">
             <div class="d-flex align-items-center gap-4">
-                <i class="fas fa-graduation-cap fa-3x text-primary-custom"></i>
+                <i class="fas fa-graduation-cap fa-3x text-primary-custom flex-shrink-0"></i>
                 <div>
-                    <h3 class="h4 fw-bold">Técnico en Desarrollo de Software</h3>
-                    <p class="text-secondary">SENATI · 2020 - 2022</p>
-                    <p class="fw-semibold text-secondary"><a href="https://drive.google.com/file/d/1zRBVRlDi0xrUnaiq4-sttvEJps4rcXOC/view?usp=sharing" target="_blank" class="github-link fw-semibold">Título Profesional <i class="fas fa-external-link-alt fa-sm"></i></a></p>
+                    <h3 class="h4 fw-bold" data-i18n="edu.degree">Técnico en Desarrollo de Software</h3>
+                    <p class="text-secondary mb-1" data-i18n="edu.school">SENATI · 2020 - 2022</p>
+                    <a href="https://drive.google.com/file/d/1zRBVRlDi0xrUnaiq4-sttvEJps4rcXOC/view?usp=sharing" target="_blank" class="github-link fw-semibold">
+                        <span data-i18n="edu.cert">Título Profesional</span> <i class="fas fa-external-link-alt fa-sm"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -444,38 +778,37 @@
 <!-- CONTACTO -->
 <section id="contacto" class="py-5">
     <div class="container">
-        <h2 class="display-5 fw-semibold text-primary-custom border-accent pb-2 d-inline-block mb-5">Contacto</h2>
+        <h2 class="display-5 fw-semibold text-primary-custom border-accent pb-2 d-inline-block mb-5" data-i18n="section.contact">Contacto</h2>
         <div class="row g-5">
             <div class="col-md-6">
                 <div class="d-flex align-items-center gap-4 mb-4">
-                    <i class="fas fa-phone-alt contact-icon"></i>
-                    <span class="fs-5">917 461 928</span>
+                    <i class="fas fa-phone-alt contact-icon"></i><span class="fs-5">917 461 928</span>
                 </div>
                 <div class="d-flex align-items-center gap-4 mb-4">
-                    <i class="fas fa-envelope contact-icon"></i>
-                    <span class="fs-5">chavestarivasjoseluis@gmail.com</span>
+                    <i class="fas fa-envelope contact-icon"></i><span class="fs-5">chavestarivasjoseluis@gmail.com</span>
                 </div>
                 <div class="d-flex align-items-center gap-4 mb-4">
-                    <i class="fas fa-map-marker-alt contact-icon"></i>
-                    <span class="fs-5">Ventanilla, Callao - Perú</span>
+                    <i class="fas fa-map-marker-alt contact-icon"></i><span class="fs-5">Ventanilla, Callao — Perú</span>
                 </div>
                 <div class="d-flex gap-4 mt-5">
-                    <a href="https://www.linkedin.com/in/jose-luis-chavesta-rivas-79740b311/" target="_blank" class="text-primary-custom fs-1"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Joseluis30c?tab=repositories" target="_blank" class="text-primary-custom fs-1"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jose-luis-chavesta-rivas-79740b311/" target="_blank" class="text-primary-custom fs-1" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Joseluis30c" target="_blank" class="text-primary-custom fs-1" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
             </div>
             <div class="col-md-6">
                 <form id="contactForm" class="card border-0 shadow-sm p-4" action="https://formspree.io/f/mgebeppz" method="POST">
                     <div class="mb-3">
-                        <input type="email" class="form-control form-control-lg rounded-pill bg-input-primary" id="email" name="email" placeholder="Correo electrónico" required>
+                        <input type="email" class="form-control form-control-lg rounded-pill" id="email" name="email" required data-i18n-ph="form.email" placeholder="Correo electrónico">
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control form-control-lg rounded-pill bg-input-primary" id="subject" name="subject" placeholder="Asunto" required>
+                        <input type="text" class="form-control form-control-lg rounded-pill" id="subject" name="subject" required data-i18n-ph="form.subject" placeholder="Asunto">
                     </div>
                     <div class="mb-3">
-                        <textarea class="form-control form-control-lg bg-input-primary" id="message" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                        <textarea class="form-control form-control-lg" id="message" name="message" rows="5" required data-i18n-ph="form.message" placeholder="Mensaje"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary border-0 w-100 py-3 rounded-pill">Enviar mensaje</button>
+                    <button type="submit" class="btn btn-primary border-0 w-100 py-3 rounded-pill">
+                        <span data-i18n="form.send">Enviar mensaje</span>
+                    </button>
                     <div id="formFeedback" class="mt-3 text-center text-success"></div>
                 </form>
             </div>
@@ -484,9 +817,9 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="py-4 text-center text-secondary border-top">
+<footer class="py-4 text-center text-secondary">
     <div class="container">
-        <p class="mb-0">© 2026 Jose Luis Chavesta Rivas · Desarrollador Backend .NET</p>
+        <p class="mb-0" data-i18n="footer.copy">© 2026 Jose Luis Chavesta Rivas · Desarrollador Backend .NET</p>
     </div>
 </footer>
 
